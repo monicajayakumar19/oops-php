@@ -25,6 +25,8 @@ public class Connect(){
 
 }
 public function Query($qry){
-    
+    $this->Connect();
+    $this->result = mysqli_query($this->con,$qry);
+    return $this->$result;
 }
 ?>
