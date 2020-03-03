@@ -22,5 +22,9 @@ public class Database(){
 public class Connect(){
     $this->con=mysqli_connect( $this->hostname,$this->username,$this->password) or die("Connection Failed.....");
     mysqli_select_db_name($this->$con,$this->$result) or die("example");
+
+}
+public function Query($qry){
+    
 }
 ?>
